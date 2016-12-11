@@ -1,0 +1,200 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Montserrat Light;
+  src: url(../fonts/Montserrat-Light.otf); 
+}
+
+@font-face {
+  font-family: Montserrat Extrabold;
+  src: url(../fonts/Montserrat-ExtraBold.otf); 
+}
+
+body {
+	font-family: Montserrat Extrabold;
+}
+
+.heading .honda, .heading .toyota {
+	font-weight: 600;
+}
+.heading {
+	overflow-x: hidden;
+	padding: 0 15px;
+}
+
+.heading p {
+	font-size: 24px;
+	font-weight: 100;
+}
+
+.heading .light {
+	font-family: Montserrat Light;
+}
+
+.heading .images-container .vs {
+	margin-top: -290px;
+	position: relative;
+}
+.heading .images-container .vs h1{
+	
+
+
+	height: 110px;
+	width: 110px;
+	padding-top: 32px;
+	font-size: 44px;
+	margin:0 auto;
+	background-color: #3889AD;
+	border-radius:50%;
+	color:#fff;
+
+}
+
+.heading .images-container .vs h1::before,
+.heading .images-container .vs h1::after {
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 4px;
+	top:calc(50% - 2px);
+}
+
+.heading .images-container .vs h1::before {
+	left:-55px;
+	background-color: #666b6a;
+}
+.heading .images-container .vs h1::after {
+	right:-55px;
+	
+	background-color: #81202F;
+}
+
+.table {
+	margin-top: 80px;
+	width: 100%;
+}
+.text-muted {
+	font-family: Montserrat Light;
+}
+.table1 {
+	margin-left: auto;
+	margin-right: auto;
+}
+.table2 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.carousel-wrapper {
+	padding: 0 5px;
+}
+
+.carousel {
+	margin-top:30px;
+	font-family: Montserrat Light;
+}
+
+.carousel-indicators {
+	position: relative;
+	left:0;
+	width: 100%;
+	margin:0 auto;
+	
+	height: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.carousel-indicators .indicator{
+	padding:10px 0;
+	cursor: pointer;
+	width: 24%;
+	height: auto;
+	background-color: #DCDCDC;
+	margin:0;
+	border:0;
+	color:#000;
+	word-wrap: normal;
+}
+.carousel-indicators .indicator{
+	fill:#666;
+}
+.carousel-indicators .indicator p {
+	padding-top: 5px;
+	font-size: 14px;
+
+}
+
+.carousel-indicators .indicator.active {
+	position: relative;
+	background-color: #74A104;
+	color: #fff;
+	width: 24%;
+}
+
+.carousel-indicators .indicator.active svg {
+	fill:#fff;
+	
+
+}
+
+.carousel-indicators .indicator.active::after {
+	width: 0; 
+    height: 0; 
+	content: '';
+	position: absolute;
+	bottom: -20px;
+	left:30px;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #74A104;
+}
+
+
+
+.main-wrapper {
+	font-family: Montserrat Light;
+	padding: 45px 15px 0;
+}
+.main-wrapper > .row {
+	padding: 0 15px;
+}
+
+.main-wrapper img {
+	padding: 15px ;
+}
+
+
+.main-wrapper .honda {
+	text-align: left;
+}
+.main-wrapper .vs {
+	text-align: center;
+}
+
+.main-wrapper .toyota {
+	text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+	.col-xs-relative {
+		position: relative;
+	}
+	.col-xs-relative .margined {
+		margin-bottom: 60px;
+	}
+	.heading .images-container .vs {
+		position: absolute;
+		bottom: 42%;
+	}
+	.table {
+		margin-top: 0px;
+	}
+	.carousel-indicators .indicator p {
+		font-size: 10px;
+	}
+
+}
+

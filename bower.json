@@ -1,0 +1,20 @@
+{
+  "name": "upwork-1",
+  "homepage": "https://github.com/DeekHalden/zp",
+  "authors": [
+    "deekhalden <iliy4@ua.fm>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
